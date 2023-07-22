@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- Font Awesome cdn css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
-    <title>To Do List</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task App 2023</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	
+	<main>
 
-    <header>
-        <h1>RyzerVisuals - To Do List</h1>
-    </header>
-    <form action="">
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit">
-            <i class="fas fa-plus-circle fa-lg"></i>
-        </button>
-        <div class="select">
-            <select name="todos" class="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="incomplete">Incomplete</option>
-            </select>
-        </div>
-    </form>
+		<div class="app">
 
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
-    </div>
+			<header>
+				<h1>RyzerVisuals todolist</h1>
+				<button id="create">Add new todo</button>
+			</header>
 
-    <script src="./script.js"></script>
-    
+			<div class="todo-list" id="list">
+
+				<!-- <div class="item">
+					<input type="checkbox" />
+					<input 
+						type="text" 
+						value="Todo content goes here" 
+						disabled />
+					<div class="actions">
+						<button class="material-icons">edit</button>
+						<button class="material-icons remove-btn">remove_circle</button>
+					</div>
+				</div> -->
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<script src="main.js"></script>
 </body>
 </html>
